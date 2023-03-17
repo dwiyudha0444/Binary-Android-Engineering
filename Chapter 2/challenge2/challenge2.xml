@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cost of Service"
+        android:minHeight="48dp"
+        android:textSize="15dp"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <TextView
+
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:text="How was the service?"
+        android:textSize="12dp"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Amazing 20%"
+            android:textSize="10dp"
+            android:background=""
+            tools:ignore="TextSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Good 18%"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="OK 15%"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+    </RadioGroup>
+
+    <TextView
+
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Round up tip?"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_below="@id/radioGroup"
+        android:thumbTint="@color/hijau_muda"
+        android:trackTint="@color/hijau"
+        android:thumbTintMode="src_in"
+        android:layoutDirection="rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/text2"
+        android:background="@color/biru"
+
+        android:text="calculate"
+        android:textColor="@color/white"
+        tools:ignore="InvalidId" />
+
+    <TextView
+
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tip Amount"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/text3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pee" />
+
+
+</RelativeLayout>
