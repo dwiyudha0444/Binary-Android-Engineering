@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">latch2</string>
+    <string name="username">ユーザー名</string>
+    <string name="password">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="singup">歌う</string>
+    <string name="ulangipassword">パスワードを繰り返す</string>
+</resources>
